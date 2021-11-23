@@ -34,7 +34,7 @@ input, textarea, select, button {
 }
 
 input, textarea, button {
-  background-color: none;
+  background: none;
   border: none;
 }
 
