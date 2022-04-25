@@ -7,15 +7,17 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
-  height: 100%;
+  block-size: 100%;
 }
 
 body {
   font-size: 100%;
-  line-height: 1.75;
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
+  line-height: 1.7;
 }
 
 ul {
@@ -40,16 +42,16 @@ input, textarea, button {
 
 img, iframe, video, object, embed {
   display: block;
-  max-width: 100%;
+  max-inline-size: 100%;
 }
 
 svg {
-  max-width: 100%;
+  max-inline-size: 100%;
 }
 
 table {
   table-layout: fixed;
-  width: 100%;
+  inline-size: 100%;
 }
 
 [hidden] {
@@ -71,13 +73,13 @@ table {
 }
 
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: auto;
-  margin: 0;
-  padding: 0;
+  block-size: auto;
   border: 0;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
   overflow: hidden;
   white-space: nowrap;
 }
